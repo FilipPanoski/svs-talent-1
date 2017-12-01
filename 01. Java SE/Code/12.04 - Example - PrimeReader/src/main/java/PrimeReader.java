@@ -9,8 +9,8 @@ public class PrimeReader {
     public static void main(String[] arguments) {
         try {
             FileInputStream file = new FileInputStream("400primes.dat");
-            BufferedInputStream buff = new BufferedInputStream(file);
-            DataInputStream data = new DataInputStream(buff);
+//            BufferedInputStream buff = new BufferedInputStream(file);
+            DataInputStream data = new DataInputStream(file);
 
             try {
                 while (true) {
@@ -19,7 +19,7 @@ public class PrimeReader {
                 }
 
             } catch (EOFException eof) {
-                buff.close();
+                data.close();
             }
 
         } catch (IOException e) {

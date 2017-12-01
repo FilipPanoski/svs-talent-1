@@ -28,6 +28,7 @@ public class InterruptsWhileSleeping {
 					Thread.sleep(1000);
 				} catch (InterruptedException e) {
 					Logger.log("I've been interupted while sleeping.");
+					return;
 				}
 			}
 		}
