@@ -1,0 +1,17 @@
+<ul class="list-group">
+    <li class="list-group-item" *ngFor="let comment of comments">
+
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h2 class="panel-title">{{comment.name}}</h2>
+            </div>
+            <div class="panel-body">
+                {{comment.body}}
+            </div>
+            <div class="panel-footer">
+                <a href="">Like</a>
+                <a href="">Comment</a>
+            </div>
+        </div>
+    </li>
+</ul>
